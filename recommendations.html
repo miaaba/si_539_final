@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicontemp.png">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Recommendations</title>
+</head>
+<body>
+    <div>
+        <header>
+            <a class = "skip" href="#skip">Skip to Main Content</a>
+            <nav class="navbar">
+                <a href="index.html" class="nav-branding">Mia's Books</a>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="recent_reads.html" class="nav-link">Recent Reads</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="recommendations.html" class="nav-link active">Recommendations</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <main id="main">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+            <div class="rec-container">
+                <h1>Recommendations</h1>
+                <div class="rec-intro">
+                    <p>Need some recommendations? Look no further. Here are some of my recommendations based on your favorite genre! I hope you find something you like!</p>
+                </div>
+                <div class="directions">
+                    <p>Click on the buttons below to filter the recommendations by genre. If you would like to see all recommendations, click the "All" button. If you would like to see recommendations that do not fit into any of the genres listed, click the "None" button.</p>
+                </div>
+            </div>
+            <h2>What are you feeling like?</h2>
+            <div class="controls">
+                <button type="button" class="control" data-filter="all">All</button>
+                <button type="button" class="control" data-filter=".fantasy">Dragons, & Jedi, & Elves, oh my!</button>
+                <button type="button" class="control" data-filter=".romance">Grandma Approved Romance</button>
+                <button type="button" class="control" data-filter=".notromance"> NOT Grandma Approved Romance</button>
+                <button type="button" class="control" data-filter=".ya">YA</button>
+                <button type="button" class="control" data-filter=".lgbt">LGBT</button>
+                <button type="button" class="control" data-filter=".cry">Crying at 3am</button>
+                <button type="button" class="control" data-filter=".dread">Existential Dread Page-turners</button>
+            </div>
+
+            <div class="container gallery">
+                <figure class="mix fantasy romance cry">
+                    <img src="images/lost_stars.jpg" alt="Book cover of Lost Stars by Claudia Gray">
+                    <figcaption>Lost Stars by Claudia Gray</figcaption>
+                </figure>
+
+                <figure class="mix fantasy">
+                    <img src="images/good_omens.jpg" alt="Book cover of Good Omens by Terry Pratchett and Niel Gaiman">
+                    <figcaption>Good Omens by Terry Pratchett and Niel Gaiman</figcaption>
+                </figure>
+
+                <figure class="mix notromance lgbt cry dread">
+                    <img src="images/song_of_achilles.jpg" alt="Book cover of The Song of Achilles by Madeline Miller">
+                    <figcaption>The Song of Achilles by Madeline Miller</figcaption>
+
+                </figure>
+
+                <figure class="mix fantasy ya">
+                    <img src="images/lightning_thief.jpeg" alt="Book cover for The Lightning Theif by Rick Riordan">
+                    <figcaption>The Lightning Thief by Rick Riordan</figcaption>
+
+                </figure>
+
+                <figure class="mix fantasy notromance">
+                    <img src="images/the_bridge_kingdom.jpg" alt="Book cover for The Bridge Kingdom by Danielle L. Jensen">
+                    <figcaption>The Bridge Kingdom</figcaption>
+
+                </figure>
+
+                <figure class="mix fantasy ya">
+                    <img src="images/the_hobbit.jpg" alt="Book cover for The Hobbit by J.R.R. Tolkien">
+                    <figcaption>The Hobbit by J.R.R. Tolkien</figcaption>
+
+                </figure>
+
+                <figure class="mix fantasy lgbt romance">
+                    <img src="images/so_this_is_ever_after.jpg" alt="Book cover for So This is Ever After by F.T. Lukens">
+                    <figcaption>So This is Ever After by F.T. Lukens</figcaption>
+
+                </figure>
+
+                <figure class="mix fantasy ya romance">
+                    <img src="images/graceling.jpg" alt="Book cover for So This is Ever After by F.T. Lukens">
+                    <figcaption>Graceling by Kristin Cashore</figcaption>
+
+                </figure>
+        </main>
+        <script src="js/hamMenu.js"></script>
+        <script src="js/backTop.js"></script>
+        <script src="js/mixitup.min.js"></script>
+
+        <script>
+            var containerEl = document.querySelector('.container');
+
+            var mixer = mixitup(containerEl);
+        </script>
+
+</body>
