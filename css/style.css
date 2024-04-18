@@ -162,6 +162,7 @@ h2{
     color: #000000;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 20px;
+    padding: 10px;
     }
 
 h3{
@@ -199,10 +200,14 @@ p{
 /* Recent reads styling */
 
 .book{
+    display: block;
+    width: auto;
+    height: 800px;
     border: solid 3px #6B705C;
     padding: 20px;
     background-color: #A5A58D;
     margin: 10px;
+    overflow: auto;
 }
 
 .book p{
