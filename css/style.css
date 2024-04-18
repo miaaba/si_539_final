@@ -9,9 +9,9 @@ html{
 /* Navigation styling. This is set up in a way that displays a hamburger menu when in mobile view and an expanded menu in larger viewports. This is the reason that it some of this code is set up using a media query uisng "max-width". */
 
 header{
-    background-color: #FFE8D6;
+    background-color: #6B705C;
     width: 100%;
-    margin: 0;
+    margin: none;
 }
 
 li{
@@ -19,12 +19,12 @@ li{
 }
 
 a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 a.nav-link{
-    font-size: 20px;
+    font-size: 30px;
 }
 
 a.skip{
@@ -68,7 +68,7 @@ a.skip{
 }
 
 .nav-link:hover{
-    color: #6B705C;
+    text-decoration: underline;
 }
 
 .hamburger{
@@ -83,7 +83,7 @@ a.skip{
     margin: 5px auto;
     -webkit-transition :all 0.3s ease-in-out;
     transition :all 0.3s ease-in-out;
-    background-color: rgb(0, 0, 0);
+    background-color: white;
 }
 
 @media(max-width:599px){
@@ -109,7 +109,7 @@ a.skip{
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: #FFE8D6;
+        background-color: #6B705C;
         width: 100%;
         text-align:center;
         transition: 0.3s;
@@ -143,21 +143,15 @@ a.skip{
     font-weight: bold;
     }
 
-body{
-    margin: 20px;
+body {
     font-style: normal;
     background-color: #FFE8D6;
-    background-image: url('../images/background.png');
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: fixed;
-    }
+}
 
 h1{
     text-align: center;
     font-size: 50px;
     color: #000000;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75), -1px -1px 0 rgba(255, 255, 255, 0.75), 1px -1px 0 rgba(255, 255, 255, 0.75), -1px 1px 0 rgba(255, 255, 255, 0.75);
     font-family: 'Times New Roman', Times, serif;
     margin-top: 20px;
 }
@@ -166,7 +160,6 @@ h2{
     text-align: center;
     font-size: 35px;
     color: #000000;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75), -1px -1px 0 rgba(255, 255, 255, 0.75), 1px -1px 0 rgba(255, 255, 255, 0.75), -1px 1px 0 rgba(255, 255, 255, 0.75);
     font-family: 'Times New Roman', Times, serif;
     margin-top: 20px;
     }
@@ -200,14 +193,16 @@ p{
 .container{
     display: grid;
     grid-template-columns: 1fr;
+    margin: 10px;
 }
 
+/* Recent reads styling */
+
 .book{
-    border: solid 3px #CB997E;
+    border: solid 3px #6B705C;
     padding: 20px;
-    background-color: #DDBEA9;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    background-color: #A5A58D;
+    margin: 10px;
 }
 
 .book p{
@@ -232,8 +227,10 @@ p{
     margin-right: auto;
 }
 
+/* Home page styling */
+
 .about-me{
-    background-color: #FFE8D6;
+    background-color: #A5A58D;
     border-radius: 10px;
     margin: 10px;
     display: grid;
@@ -258,10 +255,10 @@ p{
     width: 200px;
     grid-column: 2;
     grid-row: 2;
-    margin: 0 auto;
+    margin: auto;
 }
 
-.button {
+/* .button {
     background-color: #6B705C;
     border: none;
     color: #FFE8D6;
@@ -273,6 +270,16 @@ p{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10px;
+} */
+
+.welcome{
+    background-color: #B7B7A4;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.welcome p{
+    background-color: transparent;
 }
 
 .favorite-books{
@@ -288,19 +295,17 @@ p{
 
 .favorite-books p{
     background-color: transparent;
-    padding: 0;
 }
 
 .favorite-things{
     background-color: #CB997E;
     border-radius: 10px;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .favorite-things p{
     background-color: transparent;
-    padding: 0;
 }
 
 .favorite-books li, .favorite-things li{
@@ -309,27 +314,19 @@ p{
     font-size: 20px;
 }
 
+/* Recommendation styling */
+
 .rec-container{
+    display: grid;
     grid-template-columns: 1fr;
-}
-
-.genre p{
-    background-color: transparent;
-    padding: 0;
-}
-
-.genre{
-    background-color: #A5A58D;
-    border-radius: 10px;
     margin: 10px;
-    padding: 20px;
 }
 
 .gallery{
     background-color: #DDBEA9;
     border-radius: 10px;
     padding: 20px;
-    margin: 10px;
+    margin: 20px;
 }
 
 .gallery img{
@@ -342,6 +339,10 @@ figcaption{
     text-align: center;
     font-size: 20px;
     padding-top: 5px;
+}
+
+.controls{
+    margin: 0px 20px;
 }
 
 .controls button{
@@ -385,21 +386,21 @@ figcaption{
         bottom: 20px;
         right: 30px;
         z-index: 99;
-        border: solid 3px #6B705C;
         outline: none;
-        background-color: #A5A58D ;
-        color: rgb(0, 0, 0);
+        background-color: #6B705C ;
+        color: white;
         cursor: pointer;
         padding: 15px;
         border-radius: 10px;
         font-size: 18px;
         font-family: 'Times New Roman', Times, serif;
       }
-      #myBtn:hover {
+
+     #myBtn:hover {
         background-color:#A5A58D;
       }
 
-      .rec-container{
+    .rec-container{
         grid-template-columns: 1fr 1fr;
     }
 
