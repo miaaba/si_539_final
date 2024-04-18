@@ -153,7 +153,7 @@ h1{
     font-size: 50px;
     color: #000000;
     font-family: 'Times New Roman', Times, serif;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 h2{
@@ -161,8 +161,7 @@ h2{
     font-size: 35px;
     color: #000000;
     font-family: 'Times New Roman', Times, serif;
-    margin-top: 20px;
-    padding: 10px;
+    margin: 20px;
     }
 
 h3{
@@ -202,7 +201,7 @@ p{
 .book{
     display: block;
     width: auto;
-    height: 800px;
+    height: 900px;
     border: solid 3px #6B705C;
     padding: 20px;
     background-color: #A5A58D;
@@ -238,8 +237,6 @@ p{
     background-color: #A5A58D;
     border-radius: 10px;
     margin: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 20px;
 }
 
@@ -254,13 +251,18 @@ p{
     grid-row: 2;
 }
 
-.about-me img{
-    padding: 10px;
+.about-me-img{
+    display: flex;
+    justify-content: center;
+    background-color: #A5A58D;
+    border-radius: 10px;
+}
+
+.about-me-img img{
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    width: 200px;
-    grid-column: 2;
-    grid-row: 2;
-    margin: auto;
+    margin: 20px;
 }
 
 /* .button {
@@ -469,14 +471,19 @@ figcaption{
         grid-row: 3;
     }
 
+    .about-me-img{
+        grid-column: 2/ span 2;
+        grid-row: 4
+    }
+
     .favorite-books{
         grid-column: 1/ span 2;
-        grid-row: 4;
+        grid-row: 5;
     }
 
     .favorite-things{
         grid-column: 2/ span 3;
-        grid-row: 5;
+        grid-row: 6;
     }
 
     .home-links{
