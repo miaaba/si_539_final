@@ -11,7 +11,7 @@ html{
 header{
     background-color: #6B705C;
     width: 100%;
-    margin: none;
+    margin: 0;
 }
 
 li{
@@ -265,20 +265,6 @@ p{
     margin: 20px;
 }
 
-/* .button {
-    background-color: #6B705C;
-    border: none;
-    color: #FFE8D6;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
-} */
-
 .welcome{
     background-color: #B7B7A4;
     border-radius: 10px;
@@ -528,5 +514,10 @@ figcaption{
     .skip a{
       -webkit-transition: none;
       transition: none;
+     }
+
+     .nav-link .bar .nav-menu{
+        -webkit-transition: none;
+        transition: none;
      }
   }

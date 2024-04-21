@@ -9,34 +9,33 @@
     <title>Recommendations</title>
 </head>
 <body>
-    <div>
-        <header>
-            <a class = "skip" href="#main">Skip to Main Content</a>
-            <nav class="navbar">
-                <a href="index.html" class="nav-branding">Mia's Bookshelf</a>
+    <header>
+        <a class="skip" href="#main">Skip to Main Content</a>
+        <nav class="navbar">
+            <a href="index.html" class="nav-branding">Mia's Bookshelf</a>
 
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="recent_reads.html" class="nav-link">Recent Reads</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="recommendations.html" class="nav-link active">Recommendations</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </header>
-        <main id="main">
-            <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
-            <div class="rec-container">
-                <h1>Recommendations</h1>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recent_reads.html" class="nav-link">Recent Reads</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recommendations.html" class="nav-link active">Recommendations</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main id="main">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+        <div class="rec-container">
+            <h1>Recommendations</h1>
                 <div class="rec-intro">
                     <p>Need some not-so-typical recommendations? Look no further. Here are some of my recommendations based on oddly specific vibes! I hope you find something you like!</p>
                 </div>
@@ -126,15 +125,14 @@
                     <img src="images/going_after_cacciato.jpg" alt="Book cover for Going After Cacciato by Tim O'Brien">
                     <figcaption>Going After Cacciato by Tim O'Brien</figcaption>
                 </figure>
+            </div>
         </main>
         <script src="js/hamMenu.js"></script>
         <script src="js/backTop.js"></script>
         <script src="js/mixitup.min.js"></script>
-
         <script>
             var containerEl = document.querySelector('.container');
-
             var mixer = mixitup(containerEl);
         </script>
-
-</body>
+    </body>
+    </html>
