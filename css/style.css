@@ -383,27 +383,6 @@ figcaption{
     display: block;
 } */
 
-#myBtn {
-    display: none;
-}
-
-
-/* Tablet view */
-
-@media only screen and (min-width: 600px){
-
-    .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-    }
-
-    .recent-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 20px;
-    }
-
     #myBtn {
         display: none;
         position: fixed;
@@ -421,8 +400,26 @@ figcaption{
       }
 
      #myBtn:hover {
-        background-color:#A5A58D;
+        text-decoration: underline;
+        background-color: #6B705C ;
+        color: white;
       }
+
+/* Tablet view */
+
+@media only screen and (min-width: 600px){
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .recent-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
 
     .rec-container{
         grid-template-columns: 1fr 1fr;
